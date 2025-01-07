@@ -111,6 +111,18 @@ return [
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
+        // second databse
+        'second_sqlsrv' => [
+        'driver' => 'sqlsrv',
+        'host' => env('SECOND_DB_HOST'),
+        'port' => env('SECOND_DB_PORT'),
+        'database' => env('SECOND_DB_DATABASE'),
+        'username' => env('SECOND_DB_USERNAME'),
+        'password' => env('SECOND_DB_PASSWORD'),
+        'charset' => 'utf8',
+        'prefix' => '',
+        'collation' => 'utf8_unicode_ci',
+        ],
 
     ],
 

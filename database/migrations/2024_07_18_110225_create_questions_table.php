@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('questions', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('question_text');
             $table->enum('answer_type', ['dropdown', 'text', 'radio', 'checkbox', 'date', 'time']);
             $table->text('options')->nullable(); // यह JSON फॉर्मेट में स्टोर होगा
